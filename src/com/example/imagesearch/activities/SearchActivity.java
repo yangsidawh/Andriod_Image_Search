@@ -99,7 +99,7 @@ public class SearchActivity extends Activity {
 		imageResults.clear();
 		loadImage(0);
 	}
-	
+	// Construct API url 
 	public String getUrl(int offset) {
 		
 		String query = etSearch.getText().toString();
