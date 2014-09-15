@@ -1,4 +1,4 @@
-Andriod_Image_Search
+Andriod Image Search
 ====================
 
 This is an Android Image Search application.
@@ -16,5 +16,7 @@ Time spent: Around 7 hours spent in total
 * [x] Subsequent searches will have any filters applied to the search results
 * [x] User can tap on any image in results to see the image full-screen
 * [x] User can scroll down “infinitely” to continue loading more image results (up to 8 pages)
+
+Note: No optional tasks have done yet. Will try to update once have time.
 
 ![Video Walkthrough](imagesearch.gif)
