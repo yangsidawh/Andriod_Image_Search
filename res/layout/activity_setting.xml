@@ -1,0 +1,118 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <TextView
+        android:id="@+id/tvAdvSettingLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="20dp"
+        android:text="@string/advsetting"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/tvImageSizeLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tvColorFilterLabel"
+        android:layout_below="@+id/tvAdvSettingLabel"
+        android:layout_marginBottom="3dp"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        android:text="@string/imagesize"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/tvColorFilterLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/tvImageSizeLabel"
+        android:layout_margin="3dp"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        android:text="@string/colorfilter"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/tvImageTypeFilter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tvColorFilterLabel"
+        android:layout_below="@+id/tvColorFilterLabel"
+        android:layout_marginBottom="3dp"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        android:text="@string/typefilter"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/tvSiteFilterLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tvImageTypeFilter"
+        android:layout_below="@+id/tvImageTypeFilter"
+        android:layout_marginBottom="3dp"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        android:text="@string/sitefilter"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <Spinner
+        android:id="@+id/spSize"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tvImageSizeLabel"
+        android:layout_alignLeft="@+id/spColor"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/tvImageSizeLabel" />
+
+    <Spinner
+        android:id="@+id/spColor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tvColorFilterLabel"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/tvColorFilterLabel"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/tvImageTypeFilter" />
+
+    <Spinner
+        android:id="@+id/spType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tvSiteFilterLabel"
+        android:layout_alignLeft="@+id/spColor"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/tvImageTypeFilter" />
+
+    <EditText
+        android:id="@+id/etSiteFilter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tvSiteFilterLabel"
+        android:layout_alignLeft="@+id/spType"
+        android:layout_alignParentRight="true"
+        android:ems="10"
+        android:gravity="bottom|right"
+        android:inputType="text" >
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/btSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etSiteFilter"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:onClick="onSaveAction"
+        android:text="@string/save" />
+
+</RelativeLayout>

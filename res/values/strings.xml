@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Image Search</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_search">SearchActivity</string>
+    <string name="action_settings">Settings</string>
+    <string name="search_hint">Enter search query</string>
+    <string name="search">Search</string>
+    <string name="title_activity_image_view">View Full Image</string>
+    <string name="title_activity_setting">SettingActivity</string>
+    <string name="advsetting">Advanced search options</string>
+    <string name="imagesize">Image Size</string>
+    <string name="colorfilter">Color Filter</string>
+    <string name="sitefilter">Site Filter</string>
+    <string name="typefilter">Image Type</string>
+    <string name="save">Save</string>
+
+    <string-array name="imageSizeList">
+        <item>icon</item>
+        <item>medium</item>
+        <item>xxlarge</item>
+        <item>huge</item>
+    </string-array>
+    <string-array name="imageColorList">
+        <item>black</item>
+        <item>blue</item>
+        <item>brown</item>
+        <item>gray</item>
+        <item>green</item>
+        <item>orange</item>
+        <item>pink</item>
+        <item>purple</item>
+        <item>red</item>
+        <item>teal</item>
+        <item>white</item>
+        <item>yellow</item>
+    </string-array>
+    <string-array name="imageTypeList">
+        <item>face</item>
+        <item>photo</item>
+        <item>clipart</item>
+        <item>lineart</item>
+    </string-array>
+
+</resources>
